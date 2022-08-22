@@ -16,6 +16,32 @@
 
 > ts-node src/index.ts
 
+#setup
+1. เข้า https://www.digitalocean.com/
+
+2. คนที่ใช้ mac หรือ linux เปิดโปรแกรมที่ชื่อว่า terminal ขึ้นมา
+ส่วนคนที่ใช้ windows ให้โหลดโปรแกรมที่ชื่อว่า putty
+
+3. ssh root@ไอพีของเพื่อน
+แล้วพิมพ์ yes
+แล้วใส่ password จาก digital ocean
+
+- sudo apt update
+-git clone https://github.com/cryptothedev/tradi...
+- cd tradingview-binance-webhook
+- curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+- sudo apt-get install -y nodejs
+-sudo npm install -g yarn
+- sudo npm install -g npm
+- sudo npm install -g ts-node
+- yarn
+- mv .env.example .env
+
+ตั้งค่า config ให้เรียบร้อย
+- nano .env  
+
+- ts-node src/index.ts &
+
 #open order 
 
 - ssh root@[ip]              [login เข้า server]
