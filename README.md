@@ -1,8 +1,4 @@
-# TradingView Binance Webhook
-
-สำหรับห้องพักนักซิ่ง DEFI 
-
-แจกให้ใช้ฟรี ใช้แล้วถูกใจ ช่วยกันทำบุญ บริจาคให้กับอะไรก็ได้ สาธุนะเพื่อน
+# TradingView Binance Webhook botalert
 
 ## วิธีใช้
 1. install nodejs
@@ -19,3 +15,26 @@
 7. run server
 
 > ts-node src/index.ts
+
+#open order 
+
+- ssh root@[ip]              [login เข้า server]
+- ใส่ password
+
+- cd tradingview-binance-webhook/         [เข้าไปยัง folder ของ code]
+- git pull                                                         [อัพเดทตัวบอท]
+- sudo kill -9 $(sudo lsof -t -i:80)               [ปิดบอท]
+- ts-node src/index.ts &                             [รันบอท]
+
+URL:
+http://[ip_address]/tradingview/[token_value]
+
+คำสั่ง
+
+{{ticker}}_short_50_true_false
+
+{{ticker}}_long_50_true_false
+
+{{ticker}}_[side]_[amount_usd]_[set_tp]_[set_sl]
+
+#แปลความหมาย long/short   20       true/false  true/false
